@@ -1,0 +1,253 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/*  */
+
+
+/* https://i0.wp.com/picjumbo.com/wp-content/uploads/dark-black-orange-3d-abstract-wallpaper-free-photo.jpg?w=2210&quality=70 */
+
+/* https://www.pixelstalk.net/wp-content/uploads/image10/Geometric-shapes-in-motion-dynamic-abstract-background-HD.jpg */
+
+/* https://freerangestock.com/sample/171947/abstract-glowing-geometric-shapes-on-dark.jpg */
+
+.header {
+width: 100vw;
+height: 100vh;
+background-image: url('https://freerangestock.com/sample/171947/abstract-glowing-geometric-shapes-on-dark.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+top: 0;
+left: 0;
+z-index: 0; /* Change to 0 or a positive value */
+}
+
+.v {
+color: red;
+}
+
+
+.buttons {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+.about_header {
+    opacity: 0;
+    transition: opacity 3s ease-in;
+    }
+    
+    .about_header.visible {
+        opacity: 1; /* Fade in */
+    }
+
+    .text {
+        opacity: 0;
+        transition: opacity 5s ease-in;
+        }
+        
+        .text.visible {
+            opacity: 1; /* Fade in */
+        }
+    
+    
+    .visible {
+    opacity: 1;
+    }
+
+    .hidden {
+        display: none;
+}
+
+.welcome_text {
+font-size: 30px;
+}
+
+.about_text {
+background-color: black;
+/* background-image: url('https://burst.shopifycdn.com/photos/indoor-brick-wall-texture.jpg?width=1000&format=pjpg&exif=0&iptc=0'); */
+background-image: url('https://freerangestock.com/sample/171947/abstract-glowing-geometric-shapes-on-dark.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+height: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.left_part {
+height: auto;
+display: flex;
+justify-content: center;
+}
+
+.img {
+height: auto;
+width: 50%;
+max-width: 100%;
+float: left;
+}
+
+.skills {
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.skills li {
+list-style: none;
+}
+
+.about {
+display: flex;
+flex-direction: column;
+text-align: center;
+width: 100vw;
+height: auto;}
+
+.about_header {
+color: #ababab;
+font-weight: 600;
+}
+
+.tab-titles {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 10px;
+}
+
+.tab-links {
+font-size: 18px;
+cursor: pointer;
+position: relative;
+color: #fff;
+}
+
+.tab-links {
+    opacity: 0;
+    transition: opacity 7s ease-in-out;
+}
+
+.tab-links.visible {
+    opacity: 1;
+}
+
+.tab-links::after {
+content: '';
+width: 0;
+height: 3px;
+background: #ff004f;
+position: absolute;
+left: 0;
+bottom: -8px;
+transform: 0.5s;
+}
+
+.tab-links.active-link::after {
+width: 100%;
+}
+
+.description {
+    opacity: 0;
+    transition: opacity 8s ease-in-out;
+}
+
+.description.visible {
+    opacity: 1;
+}
+
+
+.greyLine {
+height: 3px;
+width: 100%;
+background-color: grey;
+box-shadow: 1px 2px 5px 1px;
+}
+
+.projects {
+height: auto;
+width: 100vw;
+background: #000;
+}
+
+.carousel-inner {
+height: 500px; /* Set a fixed height for the carousel */
+}
+
+.carousel-item {
+height: 100%;
+}
+
+.carousel-item img {
+    max-height: 100%; /* Ensure images don’t exceed the height of the carousel */
+    width: auto; /* Maintain aspect ratio */ 
+    object-fit: contain;
+    
+}
+
+.contact_section {
+height: 50vh;
+width: 100vw;
+/* background-image: url('https://burst.shopifycdn.com/photos/indoor-brick-wall-texture.jpg?width=1000&format=pjpg&exif=0&iptc=0'); */
+background: linear-gradient(to bottom, #000, #333);
+}
+
+.btn {
+transition: 0.5s;
+}
+
+.btn:hover {
+transform: scale(1.5) !important;
+background: red;
+}
+
+footer {
+width: 100vw;
+overflow: auto;
+}
+
+.social_icons {
+font-size: 1.5rem;
+transition: 0.3s;
+}
+
+.social_icons:hover {
+box-shadow: 0 0 11px red;
+transform: scale(1.3);
+}
+
+
+@media screen and (max-width: 520px) {
+    .welcome_text {font-size: 100%;}
+
+    .tab-titles {
+        font-size: 18px;
+        cursor: pointer;
+        position: relative;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        } 
+
+    .carousel-inner {
+        height: 150px; /* Set a fixed height for the carousel */
+        }
+
+    
+}
