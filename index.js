@@ -6,7 +6,7 @@ $(document).ready(function () {
     const skillDescriptions = [
         "Front-End Development and Back-End Development",
         "Still new to the field but have big ambitions!",
-        "Freecodecamp sept 2023 - ongoing, Lexicon vocational training sept 2024 - may 2025 + courses at Codecademy"      
+        "Freecodecamp sept 2023 - ongoing, Lexicon System Developer sept 2024 - june 2025 + courses at Codecademy"      
     ];
 
     // Display the initial skill description
