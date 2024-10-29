@@ -3,15 +3,22 @@ html {
 }
 
 body {
+    width: 100%;
+    height: auto;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 
-.header {
-height: 100vh;
-width: 100vw;
+.header { 
+    height: 100vh; /* Maintain full viewport height */  
+    margin: 0; /* Reset default margin */
+    padding: 0;
+    
+    
 }
 
 .bg-img {    
@@ -154,8 +161,8 @@ transform: 0.5s;
 }
 
 .tab-links.active-link::after {
-width: 100%;
-}
+width: 100%;}
+
 
 .description {
     opacity: 0;
@@ -196,7 +203,7 @@ height: 100%;
 }
 
 .contact_section {
-height: 50vh;
+height: auto;
 width: 100vw;
 /* background-image: url('https://burst.shopifycdn.com/photos/indoor-brick-wall-texture.jpg?width=1000&format=pjpg&exif=0&iptc=0'); */
 background: linear-gradient(to bottom, #000, #333);
@@ -230,7 +237,10 @@ transform: scale(1.3);
 
 @media screen and (max-width: 620px) {
     .welcome_text {font-size: 95%}
-    .header {height: auto; padding-bottom: 20px;    }
+    .header {
+        width: 100%; /* Change from 100vw to 100% */
+        overflow: auto; /* Prevents overflow */
+    }
 
     .tab-titles {
         font-size: 18px;
@@ -247,3 +257,5 @@ transform: scale(1.3);
 
     
 }
+
+
