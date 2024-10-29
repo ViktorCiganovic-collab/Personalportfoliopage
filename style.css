@@ -24,7 +24,7 @@ body {
 .bg-img {    
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; 
     width: 100vw;
     height: 100vh; 
     z-index: -1; /* Keep the background image behind other elements */
@@ -74,10 +74,18 @@ gap: 10px;
 font-size: 30px;
 }
 
+.about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background: #000;}
+
 .about_text {
-background-color: black;
-/* background-image: url('https://burst.shopifycdn.com/photos/indoor-brick-wall-texture.jpg?width=1000&format=pjpg&exif=0&iptc=0'); */
-background-image: url('https://freerangestock.com/sample/171947/abstract-glowing-geometric-shapes-on-dark.jpg');
+background: linear-gradient(to bottom, #000, #333);
+/* background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/dark-black-orange-3d-abstract-wallpaper-free-photo.jpg?w=2210&quality=70'); */
+/* background-image: url('https://freerangestock.com/sample/171947/abstract-glowing-geometric-shapes-on-dark.jpg'); */
 background-repeat: no-repeat;
 background-size: cover;
 height: auto;
@@ -93,6 +101,7 @@ height: auto;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+background: linear-gradient(to bottom, #000, #333);
 }
 
 .img {
@@ -113,13 +122,6 @@ align-items: center;
 .skills li {
 list-style: none;
 }
-
-.about {
-display: flex;
-flex-direction: column;
-text-align: center;
-width: 100%;
-height: auto;}
 
 .about_header {
 color: #ababab;
