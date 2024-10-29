@@ -118,7 +118,7 @@ list-style: none;
 display: flex;
 flex-direction: column;
 text-align: center;
-width: 100vw;
+width: 100%;
 height: auto;}
 
 .about_header {
