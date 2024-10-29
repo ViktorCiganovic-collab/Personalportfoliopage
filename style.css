@@ -229,9 +229,8 @@ transform: scale(1.3);
 
 
 @media screen and (max-width: 620px) {
-    .welcome_text {font-size: 90%;}
-
-    .header {height: 100vh; padding-bottom: 20px;    }
+    .welcome_text {font-size: 95%}
+    .header {height: auto; padding-bottom: 20px;    }
 
     .tab-titles {
         font-size: 18px;
